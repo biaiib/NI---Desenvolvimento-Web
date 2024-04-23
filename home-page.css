@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(211, 178, 178);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{background-color: #f0e6f7;}
+.container a{text-decoration: none;}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    text-decoration: none;
+    background-color: #9e3b3b
+}
+.titulo a {
+    color: #ffffff;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.menu-items{
+    display: flex;
+    text-decoration: none;
+    background-color: #fff;
+    justify-content: space-around;
+    padding: 20px;
+}
+.menu-items a{
+    list-style-type: none;
+    color:#9e3b3b;
+}
+
+.main-img{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.titulo-criadores{
+    text-align: center;
+    padding: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+.sec1 img, .sec2 img{border-radius: 26px;}
+.sec1{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.sec2{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+footer{
+    background-color: #9e3b3b;
+    padding: 50px;
+}
+footer p{text-align: center;}
