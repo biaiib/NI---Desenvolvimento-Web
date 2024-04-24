@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="page-3.css">
+    <link rel="icon" type="image/png" href="/images-page-3/logo-bmth.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>BMTH</title>
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <div class="container">
         <!--Header-->
         <header>
             <nav>
-                <div class="titulo"><a href="home-page.html">BRING ME THE HORIZON</a></div>
+                <div class="titulo"><a href="https://www.bmthofficial.com">BRING ME THE HORIZON</a></div>
                 <ul class="menu-items">
                     <a href="home-page.html"><li> HOME</li></a>
                     <a href="page-1.html"><li> J.COLE</li></a>
@@ -22,44 +25,86 @@
             </nav>
         </header>
 
+        <!-- Música - Spotify -->
         <div class="spotify-container">
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0M3adYbGtyRHACP86dey1H?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
 
+        <!-- Aside, Biografia e Discografia -->
         <div class="content1">
             <aside>
                 <img src="/images-page-3/logo-bmth.png" alt="">
-                <h1>Integrantes</h1>
                 <section>
                     <h2>Oliver Sykes (Oli)</h2>
+                    <img src="/images-page-3/oli-bmth.jpg" alt="">
                 </section>
                 <section>
                     <h2>Lee Malia</h2>
+                    <img src="/images-page-3/leemalia-bmth.png" alt="">
                 </section>
                 <section>
                     <h2>Matt Kean</h2>
+                    <img src="/images-page-3/mattkean-bmth.png" alt="">
                 </section>
                 <section>
-
+                    <h2>Matt Nicholls</h2>
+                    <img src="/images-page-3/mattnicholls-bmth.png" alt="">
                 </section>
-                
-                
-                
-                <h2>Matt Nicholls</h2>
-                
+
+                <!-- Aside - Playlist -->
                 <p> Confira uma playlist de <strong>Bring Me The Horizon</strong> para ouvir as faixas mais populares da banda!</p>
                 <div class="spotify-container">
-                    <iframe style="border-radius: 12px; width: 100%; height: 500px;" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0VDZny?utm_source=generator&theme=0" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <iframe style="border-radius: 12px; width: 100%; height: 700px;" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0VDZny?utm_source=generator&theme=0" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div> 
             </aside>
             <div class="content2">
-                <main>
+
+                <!-- Main/ Carousel -->
+
+                <style>
+                    #carouselExample {
+                        border-radius: 15px; 
+                        overflow: hidden;
+                        margin-top: 20px; 
+                    }
+                     .carousel-item img {
+                        border-radius: 15px;
+                        width: 100%; 
+                        height: auto;
+                    }
+                </style>
+
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="/images-page-3/bmth1.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/images-page-3/bmth2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/images-page-3/bmth3.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                <!-- <main>
                     <section class="main-content">
-                        <cite>"This time we're not giving up, let's make it last forever."</cite>
-                        <img  src="/images-page-3/bmth2.jpg" alt="">
+                        <cite><strong>"This time we're not giving up, let's make it last forever."</strong></cite>
+                        <img  src="/images-page-3/bmth2.png" alt="">
                         
                     </section>
-                </main>
+                </main> -->
+
+
 
                 <section class="biografia">
                     <h1>Biografia</h1>
@@ -73,12 +118,12 @@
                         <section>
                             <a href="https://open.spotify.com/intl-pt/album/718kbp0LCMGFNG3JuEu0Th?si=a8uUETAXSTmKnI5i3L9nDw">
                             <img src="/images-page-3/countyourblessings.jpg" alt=""></a>
-                            <h1>Count Your Blessings (2006) </h1>
+                            <p>Count Your Blessings (2006) </p>
                         </section>
                         <section>
                             <a href="https://open.spotify.com/intl-pt/album/1prhMiPHHEEzK5ueEx2vWB?si=ZPan2jcKRd2A8jHfWzSe8g">
                             <img src="/images-page-3/suicideseason.jpg" alt=""></a>
-                            <h1>Suicide Season (2008) </h1>
+                            <p>Suicide Season (2008) </p>
                         </section>
                     </section>
 
@@ -86,12 +131,12 @@
                         <section>
                             <a href="https://open.spotify.com/intl-pt/album/2BxDLAnw4QPcs8U4r1StrI?si=KlIirJgPQ7mDpfEkM5jtRw">
                             <img src="/images-page-3/ThereIsAHell.png" alt=""></a>
-                            <h1>There Is a Hell... (2010) </h1>
+                            <p>There Is a Hell... (2010) </p>
                         </section>
                         <section>
                             <a href="https://open.spotify.com/intl-pt/album/6IYPmM3xsOPL2XPSvf1ZAz?si=T3xh5rB2Q3uK6xPnzo7-OQ">
                             <img src="/images-page-3/Sempiternal.png" alt=""></a>
-                            <h1>Sempiternal (2013) </h1>
+                            <p>Sempiternal (2013) </p>
                         </section>
                     </section>
 
@@ -99,12 +144,12 @@
                         <section>
                             <a href="https://open.spotify.com/intl-pt/album/7FqHuAvmREiIwVXVpZ9ooP?si=tcO8xiBGTye4H7H-JQsx-g">
                             <img src="/images-page-3/thatsthespirit.jpg" alt=""></a>
-                            <h1>That's The Spirit (2015) </h1>
+                            <p>That's The Spirit (2015) </p>
                         </section>
                         <section>
                             <a href="https://open.spotify.com/intl-pt/album/04mkS7FooK8fRbB626T9NR?si=9xn3NrJySvWSUvW7VdMp9Q">
                             <img src="/images-page-3/amo.png" alt=""></a>
-                            <h1>Amo (2019) </h1>
+                            <p>Amo (2019) </p>
                         </section>
                         
                     </section>
@@ -113,7 +158,7 @@
                         <section>
                             <a href="https://open.spotify.com/intl-pt/album/0e1WaSNDZnoPixaxDNdWo4?si=2dwK1v75RiSkMm7U0VOkXQ">
                             <img src="/images-page-3/posthuman.jpg" alt=""></a>
-                            <h1>Post Human: Survival Horror (2020)</h1>
+                            <p>Post Human: Survival Horror (2020)</p>
                         </section>
                     </section>
 
@@ -121,19 +166,14 @@
             
             </div>
         </div>
+
         <!--Footer-->
+
         <footer>
             <div class="footer-list">
-
-            </div>
-            <div>
-                <p>Projeto NI Fecap - Desenvolvimento Web Full Stack - Crative Commons - 2024</p>
-            </div>
-            <div>
-
+                <p> Projeto NI Fecap - Desenvolvimento Web Full Stack - Crative Commons - 2024 </p>
             </div>
         </footer>
     </div>
-    
 </body>
 </html>

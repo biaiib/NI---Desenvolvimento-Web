@@ -1,6 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('bmth-bg.jpg');
+    background-image: url('/images-page-3/bg-bmth.png');
     background-size: cover; 
     background-position: center;
 }
@@ -13,7 +13,12 @@ body{
     flex-direction: column;}
 .container a{text-decoration: none;}
 
-aside,main, .bibliografia{
+cite{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+aside,main,.biografia{
     margin: 20px;
     border-radius: 10px;
 }
@@ -34,7 +39,7 @@ nav{
     justify-content: center;
     padding: 50px;
     text-decoration: none;
-    background-color: #971111
+    background-color: #37214d
 }
 .titulo a {
     color: #ffffff;
@@ -60,7 +65,7 @@ nav{
 
 .menu-items a{
     list-style-type: none;
-    color:#8b6c6c;
+    color:#7f6c8b;
 }
 .menu-items a:hover{
     list-style-type: none;
@@ -71,7 +76,7 @@ nav{
 /*aside*/
 
 aside{
-    background-color: #6405054d;
+    background-color: #4e05644d;
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -81,10 +86,17 @@ aside{
 aside img{
     height: 200px;
     margin: 30px 30px;
+    border-radius: 26px;
+}
+
+aside h2{
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
 }
 
 aside p{
-    margin: 20px;
+    margin: 0 20px;
     font-size: 15px;
 }
 
@@ -102,20 +114,22 @@ aside p{
 /*biografia*/
 
 .biografia h1{
+    margin-top: 50px;
     text-align: center;
     font-family:'Times New Roman', Times, serif;
 }
 
 .biografia p{
-    text-align: left;
-    margin:20px 50px;
-    font-size: 15px;
+    text-align: justify;
+    margin:50px 50px;
+    font-size: 20px;
     font-family:'Times New Roman', Times, serif;
 }
 
 /*discografia*/
 
 .discografia h1{
+    margin-bottom: 50px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -154,7 +168,8 @@ aside p{
 /*footer*/
 
 footer{
-    background-color: #971111;
-    padding: 25px;
+    background-color: #37214d;
+    padding: 50px;
+    color: #fff;
 }
 footer p{text-align: center;}
