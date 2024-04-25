@@ -1,47 +1,88 @@
 body{
-    background-color: rgb(211, 178, 178);
+    background-image: url('/images-participantes/bg-home.jpg');
+    background-size: cover; 
+    background-position: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .container{
-    background-color: #f0e6f7;
+    background-color: #dbdbdbe0;
     max-width: 1200px;
     margin:auto;
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+}
+    
 .container a{text-decoration: none;}
 
+nav{
+    display: flex;
+    flex-direction: column;
+}
 .titulo{
+    font-family:'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
     padding: 50px;
     text-decoration: none;
-    background-color: #9e3b3b
+    background-color: #9e3b3b;
 }
 .titulo a {
     color: #ffffff;
-    font-size: 200%;
+    font-size: 250%;
     font-weight: bold;
 }
+.titulo a:hover {
+    color: #ffffffb6;
+    font-size: 250%;
+    font-weight: bold;
+}
+.content1{display: flex;}
+.content2{flex:1;}
 
 .menu-items{
     display: flex;
-    text-decoration: none;
-    background-color: #fff;
     justify-content: space-around;
+    text-decoration: none;
+    background-color: #242424;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 20px;
 }
 .menu-items a{
     list-style-type: none;
-    color:#9e3b3b;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    color: white;
+    transition: 0.3s;
+
+}
+.menu-items a:hover
+{
+    color: white;
 }
 
-.main-img{
-    margin: 20px;
-    display: flex;
-    justify-content: center;
+.menu-items a:nth-child(1):hover {
+    background-color: white;
+    color: black; 
+  }
+
+  .menu-items a:nth-child(2):hover {
+    background-color: #4F6F52 ;
+    color:#ffffff; 
+  }
+  .menu-items a:nth-child(3):hover {
+    background-color: black;  
+  }
+  .menu-items a:nth-child(4):hover {
+    background-color: #37214d ; 
+  }
+  .menu-items a:nth-child(5):hover {
+    background-color: 	#ff69b4
 }
-.titulo-criadores{
+  
+
+.titulo-criadores h2{
     text-align: center;
     padding: 20px;
     font-family:'Times New Roman', Times, serif;
@@ -66,3 +107,22 @@ footer{
     padding: 50px;
 }
 footer p{text-align: center;}
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+    .content {
+        width: 100%;
+    }
+    body {
+        font-size: 16px;
+    } 
+    button, a.button {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

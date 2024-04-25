@@ -1,0 +1,176 @@
+body 
+{ 
+    background-color: var(--cor-verde); font-family: Arial, Helvetica, sans-serif; box-sizing: border-box; margin: 0; color: #222;
+}
+
+:root
+{
+    --cor-verde: #4F6F52;
+    --cor-azul: #b2d7fe;
+}
+
+a{color: inherit; text-decoration: none;}
+.container
+{
+    width: 75%;
+    margin: 0 auto;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    text-decoration: none;
+    background-color: #E8DFCA;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.titulo a {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.menu-items{
+    display: flex;
+    text-decoration: none;
+    background-color: var(--cor-azul);
+    justify-content: space-around;
+    padding: 20px;
+    background-color: 	#8caba8;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.menu-items a{
+    list-style-type: none;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    color: white;
+    transition: 0.3s;
+
+}
+
+.menu-items a:hover
+{
+    color: white;
+}
+
+.menu-items a:nth-child(1):hover {
+    background-color: white;
+    color: black; 
+  }
+.menu-items a:nth-child(2):hover {
+    background-color: var(--cor-verde); 
+  }
+  
+  .menu-items a:nth-child(3):hover {
+    background-color: black; 
+  }
+  
+  .menu-items a:nth-child(4):hover {
+    background-color: #37214d ; 
+  }
+  
+  .menu-items a:nth-child(5):hover {
+    background-color: 	#ff69b4}
+
+.main_layout
+{
+    display: flex;
+}
+
+.artist_bio, .artist_songs
+{
+    margin: 15px;
+    border-radius: 20px;
+}
+.artist_bio
+{
+    flex: 4;
+    font-size: 18px;
+    height: auto;
+}
+
+.artist_info
+{
+    padding: 15px;
+    background-color: #E8DFCA;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.artist_img img
+{
+    width: 25vw;
+    height: 25vw;
+    border-radius: 30%;
+    margin-bottom: 10px;
+}
+
+.songs_grid
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.artist_songs
+{
+    flex: 6;
+}
+
+.song_card
+{
+    display: flex;
+
+    width: 45%;
+    font-size: 12px;
+    margin:0px 10px;
+    transition: 0.2s;
+}
+.song_card a{display: contents; width: 100%;}
+.song_card_img{flex: 4; margin: 5px;}
+.song_card_info
+{
+    display: flex;
+    flex-direction: column;
+    flex:6;
+    margin: 5px;
+    justify-content: flex-start;
+}
+.song_card_info h1,.song_card_info h2,.song_card_info h3{margin: 3px;}
+.song_card_img img
+{
+    width: 95%;
+    height: 100%;
+}
+
+.song_card:hover
+{
+    background-color: #999;
+
+    color: white;
+}
+
+.album_grid
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.album_card
+{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    text-align: center;
+    font-size: 15px;
+    margin:10px;
+    background-color: #E8DFCA;
+    border-radius: 20px;
+    
+}
+
+footer{
+    background-color: #E8DFCA;
+    padding: 25px;
+}
+footer p{text-align: center;}
+

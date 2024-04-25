@@ -1,31 +1,28 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('/images-page-3/bg-bmth.png');
+    background-image: url('bmth-bg.jpg');
     background-size: cover; 
     background-position: center;
+    background-color: #222226;
 }
 
 .container{
-    background-color: #ffffffcb;
+    background-color: #333333;
     max-width: 1200px;
     margin:auto;
     display: flex;
     flex-direction: column;}
 .container a{text-decoration: none;}
 
-cite{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
-aside,main,.biografia{
+aside,main, .bibliografia{
     margin: 20px;
     border-radius: 10px;
 }
 
 /*música*/
 .spotify-container {
-    padding: 20px;  
+    padding: 20px;
+    height: 20px;  
 }
 /*header*/
 
@@ -33,13 +30,17 @@ nav{
     display: flex;
     flex-direction: column;
 }
+
+nav div img{
+    height: 200px;
+}
 .titulo{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     padding: 50px;
     text-decoration: none;
-    background-color: #37214d
+    background-color: #D90B1C;
 }
 .titulo a {
     color: #ffffff;
@@ -53,7 +54,10 @@ nav{
 }
 .content1{display: flex;}
 .content2{flex:1;}
-
+.content3{
+    display: flex;
+    justify-content: space-around;
+}
 .menu-items{
     display: flex;
     justify-content: space-around;
@@ -95,63 +99,73 @@ nav{
     background-color: 	#ff69b4}
   
 
+
 /*aside*/
 
 aside{
-    background-color: #4e05644d;
-    width: 30%;
+    background-color: #D90B1C;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 30%;
 }
 
 aside img{
     height: 200px;
     margin: 30px 30px;
-    border-radius: 26px;
-}
-
-aside h2{
-    text-align: center;
-    font-size: 20px;
-    margin: 0;
 }
 
 aside p{
-    margin: 0 20px;
+    margin: 20px;
     font-size: 15px;
 }
 
-/*imagem do main*/
+/*main*/
+
+main{
+    display: flex;
+    
+}
 
  main img{
-    width: 100%;
-    height: 50%;
+    width: 350%;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 5px;
     border-radius: 26px;
 }
 
 /*biografia*/
 
+.biografia{
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    margin-left: 500px;
+    border-radius: 26px;
+}
 .biografia h1{
-    margin-top: 50px;
+    margin-bottom: 0px;
     text-align: center;
     font-family:'Times New Roman', Times, serif;
+    color: #868686;
 }
 
 .biografia p{
-    text-align: justify;
-    margin:50px 50px;
-    font-size: 20px;
+    text-align: left;
+    margin:20px 50px;
+    font-size: 15px;
     font-family:'Times New Roman', Times, serif;
+    color: #b3b3b3;
 }
 
 /*discografia*/
 
+.discografia{
+    width: 70%;
+}
 .discografia h1{
-    margin-bottom: 50px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -161,23 +175,107 @@ aside p{
     border-radius: 5%;
 }
 
-.a1, .a2, .a3, .a4{
+.a1{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.a2{
     text-align: center;
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 25px;
 }
-
+.a3{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    
+    padding-right: 50px;
+}
+.a4{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}
+.a5{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 30px;
+}
 
 /*footer*/
 
 footer{
-    background-color: #37214d;
-    padding: 50px;
-    color: #fff;
+    background-color: #D90B1C;
+    padding: 25px;
 }
 footer p{text-align: center;}
-@media only screen and (max-width: 600px) {
+
+@media (max-width: 768px) {
+
+    body{
+        width: fit-content;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    main img {
+        width: 100%;
+        height: auto;
+        border-radius: 26px;
+        margin: 15px;
+    }
+
+    .biografia {
+        margin-left: 0;
+    }
+
+    .content3{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .a1 img, .a2 img, .a3 img, .a4 img,.a5 img {
+        width: 100%;
+        height: auto;
+        max-width: 200px; 
+        border-radius: 5%;
+        }
+
+    .a1, .a2, .a3, .a4, .a5 {
+        display: flex;
+        width: fit-content;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    aside{
+        width:fit-content;
+    }
+    .spotify-container {
+        height: auto;
+    }
+
+    .discografia img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/*@media only screen and (max-width: 600px) {
     
     .sidebar {
         display: none;
@@ -201,13 +299,8 @@ footer p{text-align: center;}
     aside {
         display: none;
     }
-   
-    .titulo {
-        padding: 20px; /* Defina o preenchimento desejado para o header em dispositivos móveis */
+    .a3 {
+        margin: 10px 0; 
+        padding-right: 20px; 
     }
-    .menu-items {
-        justify-content: center; /* Alinha os itens do menu ao centro */
-        flex-wrap: wrap; /* Permite que os itens do menu envolvam para uma linha adicional, se necessário */
-    }
-    
-}
+}*/
