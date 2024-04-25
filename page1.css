@@ -1,6 +1,6 @@
 body 
 { 
-    background-color: var(--cor-verde); font-family: Arial, Helvetica, sans-serif; box-sizing: border-box; margin: 0; padding: 0; color: #222;
+    background-color: var(--cor-verde); font-family: Arial, Helvetica, sans-serif; box-sizing: border-box; margin: 0; color: #222;
 }
 
 :root
@@ -54,18 +54,18 @@ a{color: inherit; text-decoration: none;}
 
 .menu-items a:nth-child(1):hover {
     background-color: white;
-    color: black; /* Define a cor de fundo específica para o primeiro item */
+    color: black; 
   }
 .menu-items a:nth-child(2):hover {
-    background-color: var(--cor-verde); /* Define a cor de fundo específica para o primeiro item */
+    background-color: var(--cor-verde); 
   }
   
   .menu-items a:nth-child(3):hover {
-    background-color: black; /* Define a cor de fundo específica para o segundo item */
+    background-color: black; 
   }
   
   .menu-items a:nth-child(4):hover {
-    background-color: #37214d ; /* Define a cor de fundo específica para o terceiro item */
+    background-color: #37214d ; 
   }
   
   .menu-items a:nth-child(5):hover {
@@ -109,6 +109,7 @@ a{color: inherit; text-decoration: none;}
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    
 }
 .artist_songs
 {
@@ -140,6 +141,14 @@ a{color: inherit; text-decoration: none;}
     height: 100%;
 }
 
+.song_card_info
+{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+
+
 .song_card:hover
 {
     background-color: #999;
@@ -157,76 +166,72 @@ a{color: inherit; text-decoration: none;}
 .album_card
 {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     width: 45%;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     margin:10px;
     background-color: var(--cor-bege);
     border-radius: 20px;
     
 }
 
-
-
 .album_card img {
-    width: 100%; /* Garante que a imagem ocupe 100% da largura da div */
-    height: 100%; /* Garante que a imagem ocupe 100% da altura da div */
-    object-fit: cover; /* Faz com que a imagem cubra toda a área do contêiner */
-    border-radius: 20px; /* Arredonda apenas os cantos superiores */
+    width: 100%;  
+    object-fit: cover; 
+    border-radius: 20px; 
 }
-footer a{color: #D20062;}
 
 footer{
     background-color: var(--cor-bege);
     padding: 25px;
-    font-size: 15px;
 }
 footer p{text-align: center;}
 
-@media only screen and (max-width: 970px) {
+footer a{color:#37214d;}
 
-    .container {
-        width: 100%;
-        margin: auto; 
-        padding: 0; /* Adiciona um pequeno espaçamento interno para evitar que o conteúdo toque nas bordas da tela */
-    }
-    .main_layout{flex-direction: column;}
-    .titulo a {
-        font-size: 150%; /* Reduz o tamanho da fonte do título */
-    }
+@media only screen and (max-width: 980px) {
+    
+    .container{width: 95%;}
+    
+    /*Header*/
+    .titulo a {font-size: 30px; }
 
     .menu-items {
-        flex-direction: column; 
+        flex-direction: column;
         text-align: center;
-        /* Altera a direção do menu para uma coluna */
+        font-size: 20px;
     }
-
     .menu-items a {
-        padding: 15px; /* Reduz o espaçamento entre os itens do menu */
+        padding: 8px;
+        
     }
 
+    /*main*/
+    .main_layout{flex-direction: column;}
+    .songs_grid{flex-direction: column;}
+    .song_card,.album_card{width: 100%;}
     .artist_img img {
-        width: 100%;
-        height: 90%;
-        border-radius: 15px;
+        width: 100%; 
+        height: auto;
+        border-radius: 15px; 
     }
-
+    .song_card_info{font-size: 15px;}
+    .song_card:nth-child(2), .song_card:nth-child(7){display: none;}
 
     .artist_info {
-        font-size: 20px; /* Reduz o tamanho da fonte da biografia do artista */
-    }
-    .song_card:nth-child(2), .song_card:nth-child(7){display: none;}
-    .songs_grid,.album_grid{flex-wrap: nowrap; flex-direction: column; justify-content: space-around; align-items: center;}
-    .song_card,.album_card{width: 100%; font-size: 15px;}
-    .song_card_img{flex: 6;}
-    .song_card_img img,
-    .album_card img {
-        border-radius: 12px; /* Reduz o raio da borda das imagens das músicas e dos álbuns */
+        font-size: 20px; 
     }
 
-    .footer {
-        padding: 15px; /* Reduz o espaçamento no rodapé */
+    .song_card_img img,
+    .album_card img {
+        border-radius: 12px;
+    }
+
+     /*footer*/
+    footer {
+        padding: 15px; 
+        font-size: 17px;
     }
 }
