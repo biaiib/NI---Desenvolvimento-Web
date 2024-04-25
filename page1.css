@@ -1,12 +1,12 @@
 body 
 { 
-    background-color: var(--cor-verde); font-family: Arial, Helvetica, sans-serif; box-sizing: border-box; margin: 0; color: #222;
+    background-color: var(--cor-verde); font-family: Arial, Helvetica, sans-serif; box-sizing: border-box; margin: 0; padding: 0; color: #222;
 }
 
 :root
 {
     --cor-verde: #4F6F52;
-    --cor-azul: #b2d7fe;
+    --cor-bege: #E8DFCA;
 }
 
 a{color: inherit; text-decoration: none;}
@@ -20,7 +20,7 @@ a{color: inherit; text-decoration: none;}
     justify-content: center;
     padding: 50px;
     text-decoration: none;
-    background-color: #E8DFCA;
+    background-color: var(--cor-bege);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .titulo a {
@@ -54,18 +54,18 @@ a{color: inherit; text-decoration: none;}
 
 .menu-items a:nth-child(1):hover {
     background-color: white;
-    color: black; 
+    color: black; /* Define a cor de fundo específica para o primeiro item */
   }
 .menu-items a:nth-child(2):hover {
-    background-color: var(--cor-verde); 
+    background-color: var(--cor-verde); /* Define a cor de fundo específica para o primeiro item */
   }
   
   .menu-items a:nth-child(3):hover {
-    background-color: black; 
+    background-color: black; /* Define a cor de fundo específica para o segundo item */
   }
   
   .menu-items a:nth-child(4):hover {
-    background-color: #37214d ; 
+    background-color: #37214d ; /* Define a cor de fundo específica para o terceiro item */
   }
   
   .menu-items a:nth-child(5):hover {
@@ -91,7 +91,7 @@ a{color: inherit; text-decoration: none;}
 .artist_info
 {
     padding: 15px;
-    background-color: #E8DFCA;
+    background-color: var(--cor-bege);
     border-radius: 20px;
     font-size: 15px;
 }
@@ -118,7 +118,6 @@ a{color: inherit; text-decoration: none;}
 .song_card
 {
     display: flex;
-
     width: 45%;
     font-size: 12px;
     margin:0px 10px;
@@ -159,18 +158,75 @@ a{color: inherit; text-decoration: none;}
 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 45%;
     text-align: center;
     font-size: 15px;
     margin:10px;
-    background-color: #E8DFCA;
+    background-color: var(--cor-bege);
     border-radius: 20px;
     
 }
 
+
+
+.album_card img {
+    width: 100%; /* Garante que a imagem ocupe 100% da largura da div */
+    height: 100%; /* Garante que a imagem ocupe 100% da altura da div */
+    object-fit: cover; /* Faz com que a imagem cubra toda a área do contêiner */
+    border-radius: 20px; /* Arredonda apenas os cantos superiores */
+}
+footer a{color: #D20062;}
+
 footer{
-    background-color: #E8DFCA;
+    background-color: var(--cor-bege);
     padding: 25px;
+    font-size: 15px;
 }
 footer p{text-align: center;}
 
+@media only screen and (max-width: 970px) {
+
+    .container {
+        width: 100%;
+        margin: auto; 
+        padding: 0; /* Adiciona um pequeno espaçamento interno para evitar que o conteúdo toque nas bordas da tela */
+    }
+    .main_layout{flex-direction: column;}
+    .titulo a {
+        font-size: 150%; /* Reduz o tamanho da fonte do título */
+    }
+
+    .menu-items {
+        flex-direction: column; 
+        text-align: center;
+        /* Altera a direção do menu para uma coluna */
+    }
+
+    .menu-items a {
+        padding: 15px; /* Reduz o espaçamento entre os itens do menu */
+    }
+
+    .artist_img img {
+        width: 100%;
+        height: 90%;
+        border-radius: 15px;
+    }
+
+
+    .artist_info {
+        font-size: 20px; /* Reduz o tamanho da fonte da biografia do artista */
+    }
+    .song_card:nth-child(2), .song_card:nth-child(7){display: none;}
+    .songs_grid,.album_grid{flex-wrap: nowrap; flex-direction: column; justify-content: space-around; align-items: center;}
+    .song_card,.album_card{width: 100%; font-size: 15px;}
+    .song_card_img{flex: 6;}
+    .song_card_img img,
+    .album_card img {
+        border-radius: 12px; /* Reduz o raio da borda das imagens das músicas e dos álbuns */
+    }
+
+    .footer {
+        padding: 15px; /* Reduz o espaçamento no rodapé */
+    }
+}
