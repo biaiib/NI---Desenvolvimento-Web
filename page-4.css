@@ -151,6 +151,8 @@ nav {
   .menu-items a:nth-child(5):hover {
     background-color:     #a01259}
 
+    .img_final img{width: 100%; border-radius: 20px;}
+
     footer{
         background-color: #cf2466;
         padding: 50px;
