@@ -1,0 +1,169 @@
+
+body {
+    font-family: fantasy;
+    box-sizing: border-box;
+    margin: 0;
+    color: #a01259;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--background-color);
+    background-image: url('img/animal\ print.jpg');
+}
+
+:root {
+    --background-color: #ffe0f0;
+    --pink-color: #ff69b4;
+    --white-color: #ffffff;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #ffa8d4;
+}
+
+a{text-decoration: none; color: inherit;}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--pink-color);
+    border-radius: 20px;
+}
+
+.titulo a {
+    color: var(--white-color);
+    font-size: 3em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-items {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-items a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    transition: color 0.3s;
+}
+
+.menu-items a:hover {
+    color: #f565ad;
+}
+
+.spotify-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.main_layout {
+    display: flex;
+    gap: 20px;
+}
+
+.artist_bio, .artist_songs {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 168, 212, 0.8);
+    border-radius: 10px;
+}
+
+.artist_songs a:hover, .song_card a:hover {
+    color: #ce0d6d;
+}
+
+.artist_bio h1,
+.artist_bio h2 {
+    margin: 0 0 10px;
+}
+
+.artist_img img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.songs_grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.song_card {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f35ea8; 
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.song_card a{color: #ce0d6d;}
+.song_card:hover {
+    transform: scale(1.05);
+}
+
+.song_card_img {
+    width: 40%;
+    margin-right: 10px;
+}
+
+.song_card_img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.artist_info_song {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    color: #f864a2;
+    padding: 10px;
+    background-color: rgba(255, 236, 247, 0.8);
+    border-radius: 10px;
+}
+
+.menu-items a:nth-child(1):hover {
+    background-color: white;
+  }
+.menu-items a:nth-child(2):hover {
+    background-color: #4F6F52; 
+  }
+
+  .menu-items a:nth-child(3):hover {
+    background-color: black; 
+  }
+
+  .menu-items a:nth-child(4):hover {
+    background-color: #37214d ; 
+  }
+
+  .menu-items a:nth-child(5):hover {
+    background-color:     #a01259}
+
+    footer{
+        background-color: #cf2466;
+        padding: 50px;
+        color: #fff;
+    }
+    footer p{text-align: center;}
+
+@media only screen and (max-width: 768px) {
+    .container{width: 100%;}
+    .main_layout {
+        flex-direction: column;
+    }
+    .song_card {
+        width: 100%;
+    }
+}
